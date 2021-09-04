@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="formtoggle">
+        <button class="toggle-btn clicked" id="btn1" onclick="toggleform('1')">
+            <input type="button" class="formtoggle-btn" value="1">
+            Basic Details
+        </button>
+        <button class="toggle-btn" id="btn2" onclick="toggleform('2')">
+            <input type="button" class="formtoggle-btn" value="2">
+            Education
+        </button>
+        <button class="toggle-btn" id="btn3" onclick="toggleform('3')">
+            <input type="button" class="formtoggle-btn" value="3">
+            Higher Education
+        </button>
+    </div>
+    <div class="form-full clicked" id="form1">
+        <div class="form-item" style="padding-top: 20px;">
+            <h4>Name: </h4>
+            <input type="text" class="form-item-box" placeholder="Your Name">
+        </div>
+        <div class="form-item">
+            <h4>Email: </h4>
+            <input type="email" class="form-item-box" placeholder="Your Email">
+        </div>
+        <div class="form-item">
+            <h4>Phone: </h4>
+            <input type="tel" class="form-item-box" placeholder="Your Phone Number">
+        </div>
+        <div class="form-item">
+            <div class="radio-items">
+                <input type="radio" style="padding-top: 5px; margin-top:5px;" value="Male" id="Male" name="Gender">
+                <label for="Male">Male</label>
+                <input type="radio" style="margin-left: 30px; padding-top: 5px; margin-top:5px;" value="Female"
+                    id="Female" name="Gender">
+                <label for="Female">Female</label>
+            </div>
+        </div>
+        <div class="form-item">
+            <h4>Passing Year: </h4>
+            <select id="passYears" class="form-item-box">
+                <option value="" selected disabled hidden>Year</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <h4>City: </h4>
+            <input type="text" class="form-item-box" placeholder="Your City">
+        </div>
+        <div class="form-item">
+            <h4>Address: </h4>
+            <input type="text" class="form-item-box" placeholder="Your Address">
+        </div>
+        <div class="form-item">
+            <h4>Pincode: </h4>
+            <input type="number" class="form-item-box" placeholder="Your Pincode">
+        </div>
+        <div style="text-align: center;">
+            <button class="reg-button" type="submit" onclick="toggleform('2')">Next</button><br><br> Go Back to
+            <a href="login.html">Sign In</a><br><br>
+
+        </div>
+
+    </div>
+    <div class="form-full" id="form2">
+        <h3 style="padding-top: 20px; padding-left: 40px;">Your Educational Details</h3>
+        <div class=form2-item>
+            <select class="form2-item-flex" id="year1">
+                <option value="" selected disabled hidden>10th Passing Year</option>
+            </select>
+            <select class="form2-item-flex">
+                <option value="" selected disabled hidden>Grading System</option>
+                <option value="grade">Grade</option>
+                <option value="marks">Marks</option>
+                <option value="percentage">Percentage</option>
+            </select>
+            <input class="form2-item-flex" type="text" placeholder="Value">
+        </div>
+
+        <div class=form2-item>
+            <select class="form2-item-flex" id="year2">
+                <option value="" selected disabled hidden>12th Passing Year</option>
+
+            </select>
+            <select class="form2-item-flex">
+                <option value="" selected disabled hidden>Grading System</option>
+                <option value="grade">Grade</option>
+                <option value="marks">Marks</option>
+                <option value="percentage">Percentage</option>
+            </select>
+            <input class="form2-item-flex" type="text" placeholder="Value">
+        </div>
+        <div class=form2-item>
+            <select class="form2-item-flex" id="year3">
+                <option value="" selected disabled hidden>Grad Passing Year</option>
+
+            </select>
+            <select class="form2-item-flex">
+                <option value="" selected disabled hidden>Grading System</option>
+                <option value="grade">Grade</option>
+                <option value="marks">Marks</option>
+                <option value="percentage">Percentage</option>
+            </select>
+            <input class="form2-item-flex" type="text" placeholder="Value">
+
+        </div>
+        <div style="text-align: center;">
+            <button class="reg-button" type="submit" onclick="toggleform('3')">Next</button><br><br> Go Back to
+            <a href="login.html">Sign In</a>
+
+        </div>
+
+    </div>
+    <div class="form-full" id="form3">
+        <fieldset class=form3>
+            <label for="job">
+                <h4>Select the Course that Interests You</h4>
+            </label>
+            <select id="job" name="user_job">
+                <option value="" selected disabled hidden>Select a Course</option>
+                <optgroup label="Management">
+                    <option value="MBA">Master of Business Administration</option>
+                    <option value="BBA">Bachelor of Business Administration</option>
+                </optgroup>
+                <optgroup label="Pharmacy">
+                    <option value="MPharm">Master of Pharmacy</option>
+                    <option value="BPharm">Bachelor of Pharmacy</option>
+                </optgroup>
+                <optgroup label="Medical">
+                    <option value="MBBS">M.B.B.S</option>
+                    <option value="MD">Doctrate of Medicine</option>
+                    <option value="BDS">Bachelor of Dental Science</option>
+                </optgroup>
+                <optgroup label="Law">
+                    <option value="LLB">L.L.B.</option>
+                    <option value="LLM">L.L.M.</option>
+                </optgroup>
+                <optgroup label="Arts">
+                    <option value="BA">Bachelor of Arts</option>
+                    <option value="MA">Master of Arts</option>
+                </optgroup>
+                <optgroup label="Engineering">
+                    <option value="BTech">Bachelor of Technology</option>
+                    <option value="MTech">Master of Technology</option>
+                </optgroup>
+                <optgroup label="Science">
+                    <option value="BSc">Bachelor of Science</option>
+                    <option value="MSC">Master of Science</option>
+                </optgroup>
+                <optgroup label="Education">
+                    <option value="BEd">Bachelor of Education</option>
+                    <option value="MEd">Master of Education</option>
+                </optgroup>
+                <optgroup label="Commerce">
+                    <option value="BCom">Bachelor of Commerce</option>
+                    <option value="MCom">Master of Commerce</option>
+                </optgroup>
+                <optgroup label="Computer Applications">
+                    <option value="BCom">Bachelor of Computer Applications</option>
+                    <option value="MCom">Master of Computer Applications</option>
+                </optgroup>
+            </select>
+            <h4>Do you have any Professional Experience?</h4>
+            <div class="form-item-flex">
+
+                <input id="companybtn" type="button" class="companybtn" value="Yes" onclick="validateTerms()">
+                <select id="answer" class="answer" name="Companydropdown" onchange='ifothers(this.value);'>
+                    <option value="" selected disabled hidden>Select a Company</option>
+                    <option value="1">Company1</option>
+                    <option value="2">Company2</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div id="CompanyName" style="display: none;">
+                <h4>Enter the Company name</h4>
+                <input type="text" name="CompanyName" />
+            </div>
+        </fieldset>
+        <a href="index.html">
+            <div style="text-align: center;">
+                <button class="reg-button" type="submit">Register</button><br><br>
+            </div>
+        </a>
+
+    </div>
+
+    <script src="js/others.js"> </script>
+</body>
+
+</html>

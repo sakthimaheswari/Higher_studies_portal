@@ -1,0 +1,447 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Abel);
+
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  font-weight: 400px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+  outline-offset: 0;
+}
+
+a {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggle {
+  background-color: #000;
+}
+
+a#scrollUp {
+  bottom: 0px;
+  right: 10px;
+  padding: 5px 10px;
+  background: #fe980f;
+  color: #fff;
+  -webkit-animation: bounce 2s ease infinite;
+  animation: bounce 2s ease infinite;
+}
+
+a#scrollUp i {
+  font-size: 30px;
+}
+
+.header-bottom {
+  padding-bottom: 30px;
+  padding-top: 20px;
+  background-color: #00b4cc;
+  height: 60px;
+}
+
+.left-sidebar h2:after,
+h2.title:after {
+  content: " ";
+  position: absolute;
+  border: 1px solid #f5f5f5;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: -2;
+}
+
+.left-sidebar h2:before {
+  content: " ";
+  position: absolute;
+  background: #fff;
+  bottom: -6px;
+  width: 130px;
+  height: 30px;
+  z-index: -1;
+  left: 50%;
+  margin-left: -65px;
+}
+
+.course-cat {
+  border: 1px solid #f7f7f0;
+  margin-bottom: 0px;
+  padding-top: 20px;
+}
+
+.course-cat .panel {
+  background-color: #ffffff;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+
+.course-cat .panel-default .panel-heading {
+  background-color: #ffffff;
+  border: 0 none;
+  color: #ffffff;
+  padding: 5px 20px;
+}
+
+.course-cat .panel-default .panel-heading .panel-title a {
+  color: #696763;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  padding-left: 7px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.course-cat .badge {
+  background: none;
+  border-radius: 10px;
+  color: #696763;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  min-width: 10px;
+  padding: 3px 7px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.panel-body ul {
+  padding-left: 20px;
+}
+
+.panel-body ul li a {
+  color: #696763;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.left-sidebar h2,
+.filter_h h2 {
+  color: #fe980f;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 auto 10px;
+  text-align: center;
+  position: relative;
+  padding-top: 4px;
+  z-index: 3;
+}
+
+.filter_b {
+  border: 1px solid #f7f7f0;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.filter_b .nav-stacked li a {
+  background-color: #ffffff;
+  color: #696763;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.filter_b .nav-stacked li a:hover {
+  background-color: #fff;
+  color: #696763;
+}
+
+.mainmenu ul li {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.mainmenu ul li:first-child {
+  padding-left: 0px;
+}
+
+.mainmenu ul li a {
+  text-transform: uppercase;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+  padding-bottom: 10px;
+  background-color: #00b4cc;
+}
+
+.mainmenu ul li a:hover,
+.mainmenu ul li a.active,
+.nav-menu ul li a.active {
+  color: white;
+  background-color: #00b4cc;
+}
+
+.search_box input {
+  background: #f0f0e9;
+  border: medium none;
+  color: #b2b2b2;
+  font-family: "roboto";
+  font-size: 12px;
+  font-weight: 700;
+  height: 35px;
+  outline: medium none;
+  padding-left: 10px;
+  width: 155px;
+  background-image: url(../images/home/searchicon.png);
+  background-repeat: no-repeat;
+  background-position: 130px;
+}
+
+.nav-menu ul li {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-menu ul li:last-child {
+  padding-right: 0;
+}
+
+.nav-menu ul li a {
+  background: #00b4cc;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+  padding-right: 0;
+  margin-top: 3px;
+}
+
+.nav-menu ul li a i {
+  margin-right: 3px;
+}
+
+.nav-menu ul li a:hover {
+  color: 000;
+  background: #00b4cc;
+}
+
+.features_items {
+  overflow: hidden;
+}
+
+.card-image-wrapper {
+  border: 1px solid #f7f7f5;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.single-card {
+  position: relative;
+}
+
+.cardinfo h2 {
+  color: #fe980f;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cardinfo p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #696763;
+}
+
+.cardinfo img {
+  width: 100%;
+  height: 100px;
+}
+
+.cardinfo a {
+  color: #696763;
+}
+
+.cardinfo a:hover {
+  color: #fe980f;
+}
+
+.cardinfo {
+  position: relative;
+}
+
+.choose {
+  border-top: 1px solid #f7f7f0;
+}
+
+.choose ul li a {
+  color: #b3afa8;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.choose ul li a i {
+  margin-right: 5px;
+}
+
+.choose ul li a:hover {
+  background: none;
+  color: #fe980f;
+}
+
+.pagination {
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-top: 0;
+  padding-left: 15px;
+}
+
+.pagination li a,
+.pagination li span {
+  background-color: #f0f0e9;
+  border: 0;
+  float: left;
+  line-height: 1.42857;
+  margin-left: -1px;
+  padding: 6px 12px;
+  position: relative;
+  text-decoration: none;
+  margin-right: 5px;
+  color: #000;
+}
+
+.pagination li a:hover {
+  background: #fe980f;
+  color: #fff;
+}
+
+.pagination .active a,
+.pagination .active a:hover,
+.pagination .active a:focus {
+  background-color: #fe980f;
+  border-color: #fe980f;
+  color: #ffffff;
+  cursor: default;
+  z-index: 2;
+}
+
+.well {
+  background-color: #ffffff;
+  border: 1px solid #f7f7f0;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 20px;
+}
+
+.search {
+  width: 75%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 500px;
+  border: 1px solid #00b4cc;
+  border-right: none;
+  padding: 5px;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px 0 0 8px;
+  margin-left: 460px;
+  margin-top: 50px;
+  outline: none;
+  color: black;
+}
+
+.searchTerm:focus {
+  color: black;
+}
+
+.searchButton {
+  width: 75px;
+  height: 50px;
+  margin-top: 50px;
+  border: 1px solid #00b4cc;
+  background: black;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap {
+  height: 175px;
+  top: 50%;
+  margin-top: 0%;
+  left: 50%;
+  /* background-image:url('https://financialtribune.com/sites/default/files/field/image/17january/04-as-higher_education_1273-ab.jpg'); */
+  background-color: #00b4cc;
+  background-size: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.grid .text {
+  padding: 10px;
+  text-align: center;
+}
+
+.grid .text a {
+  background-color: #00b4cc;
+  border-color: #00b4cc;
+  border-radius: 8px;
+}
+
+.grid .cardimg {
+  height: 150px;
+  width: 150px;
+  margin-left: 60px;
+}
